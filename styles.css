@@ -1,0 +1,55 @@
+* {
+  color: #f2f0ef;
+  font-size: 16px;
+  font-family: "Rubik", "sans-serif";
+}
+
+html {
+  background-color: #272727;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+li {
+  font-size: 0.85rem;
+}
+
+.social-fill {
+  filter: invert();
+}
+
+socials img {
+}
+socials img {
+  width: 22px;
+  margin-right: 10px;
+}
+
+logo img {
+  width: 300px;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 15%;
+}
+
+nav,
+logo,
+socials {
+  flex: 1;
+}
+
+logo {
+  text-align: center;
+}
+
+socials {
+  text-align: right;
+}

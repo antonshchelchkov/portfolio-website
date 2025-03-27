@@ -13,6 +13,14 @@ html {
 top {
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0px;
+  background-color: #272727;
+}
+
+a {
+  font-size: 1em;
+  text-decoration: none;
 }
 
 ul {
@@ -24,6 +32,11 @@ ul {
 
 li {
   font-size: 0.85rem;
+}
+
+li > a:hover {
+  color: #c5a961;
+  text-shadow: 2px 2px 2px black;
 }
 
 .social-fill {
@@ -45,7 +58,7 @@ header {
   flex-flow: row nowrap;
   align-items: center;
   margin: 20px 0;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 nav,
@@ -57,6 +70,24 @@ socials {
 logo {
   text-align: center;
   padding: 0 50px;
+}
+
+@media (max-width: 770px) {
+  logo img {
+    width: 30vw;
+  }
+  logo {
+    padding: 0 0px;
+  }
+  socials {
+    display: none;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  .space {
+    display: none;
+  }
 }
 
 socials {

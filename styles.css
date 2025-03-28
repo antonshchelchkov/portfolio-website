@@ -112,10 +112,10 @@ h2 {
 }
 
 .videos {
-  width: 1200px;
   display: grid;
+  width: 1200px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr;
   gap: 15px;
 }
 .vidleft {

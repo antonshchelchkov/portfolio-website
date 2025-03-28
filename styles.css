@@ -120,11 +120,13 @@ h2 {
 }
 .vidleft {
   width: 100%;
+  height: auto;
   grid-column: 1 / 2;
 }
 
 .vidright {
   width: 100%;
+  height: auto;
   grid-column: 2 / 3;
 }
 @media (max-width: 770px) {

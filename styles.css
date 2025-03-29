@@ -84,8 +84,8 @@ socials {
 
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 h2 {
   width: 1200px;
@@ -121,13 +121,11 @@ h2 {
 .vidleft {
   width: 100%;
   height: auto;
-  grid-column: 1 / 2;
 }
 
 .vidright {
   width: 100%;
   height: auto;
-  grid-column: 2 / 3;
 }
 @media (max-width: 770px) {
   logo img {
@@ -140,9 +138,18 @@ h2 {
     display: none;
   }
   nav a {
-    font-size: 12px;
+    font-size: 10px;
   }
   .space {
     display: none;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .portfolio {
+    grid-template-columns: 1fr 1fr;
+  }
+  .videos {
+    grid-template-columns: 1fr;
   }
 }
